@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-2-thread-1","id":1},{"content":"pool-2-thread-2","id":2},{"content":"pool-2-thread-3","id":3},{"content":"pool-2-thread-4","id":4}];
+var items = [{"id":1,"group":1,"content":"com\/api\/automation\/tags\/deleteJobEntry[2:29]","start":1755710008542,"end":1755710011055,"title":"com\/api\/automation\/tags\/deleteJobEntry[2:29] 11:13:28.542-11:13:31.055 To delete the job entry from application using job id and delete the job entry twice"},{"id":2,"group":2,"content":"com\/api\/automation\/tags\/queryParameters[1:8]","start":1755710008655,"end":1755710009154,"title":"com\/api\/automation\/tags\/queryParameters[1:8] 11:13:28.655-11:13:29.154 To get the data using Query Parameters","className":"failed"},{"id":3,"group":3,"content":"com\/api\/automation\/tags\/queryParameters[2:25]","start":1755710008544,"end":1755710009155,"title":"com\/api\/automation\/tags\/queryParameters[2:25] 11:13:28.544-11:13:29.155 To get the data using Query Parameters with JobId not in the application","className":"failed"},{"id":4,"group":4,"content":"com\/api\/automation\/tags\/updateJobDescription[1:8]","start":1755710008542,"end":1755710011044,"title":"com\/api\/automation\/tags\/updateJobDescription[1:8] 11:13:28.542-11:13:31.044 To update the job description for newly added job entry"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

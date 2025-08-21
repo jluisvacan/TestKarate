@@ -1,0 +1,4525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"d753ea2e-30ab-4c6f-8e9f-fa08cc78b8d5",karate_version:"1.4.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>com.api.automation.getrequest.queryparameters.queryParameters</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">2</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div>staging</div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-08-21 01:33:03 AM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:7]"><span>[1:7]</span> <span>To get the data using Query Parameters</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2:24]"><span>[2:24]</span> <span>To get the data using Query Parameters with JobId not in the application</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">com/api/automation/getrequest/queryparameters/queryParameters.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">To test the GET end point with Query Parameters</span>
+          <span class="feature-description">GET /normal/wrb/api/find</span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:7]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:7]</span>
+                <span class="scenario-name">To get the data using Query Parameters</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:7]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:9897&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">01:32:49.840 classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:5
+Given url &#39;http://localhost:9897&#39;
+&gt;&gt; classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:7
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:254)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1201)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime$1.process(FeatureRuntime.java:140)
+
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:5
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#Create the Job entry</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#Get the newly created Job Entry using Query param</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref failed">10</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def getRandomValue = function() {return Math.floor((100)*Math.random());}</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">01:32:49.846 classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:10
+* def getRandomValue = function() {return Math.floor((100)*Math.random());}
+&gt;&gt; classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:7
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:254)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1201)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime$1.process(FeatureRuntime.java:140)
+
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:5
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:10
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref failed">11</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def createJobId = getRandomValue()</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">01:32:49.899 classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:11
+* def createJobId = getRandomValue()
+&gt;&gt; classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:7
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:254)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1201)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime$1.process(FeatureRuntime.java:140)
+
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:5
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:10
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:11
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref failed">12</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def createJob = call read(&quot;../../createJobEntryWithVariables.feature&quot;) {_url:&#39;http://localhost:9897&#39;,_path:&#39;/normal/webapi/add&#39;,_id:&#39;#(createJobId)&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">01:32:49.901 classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:12
+* def createJob = call read(&quot;../../createJobEntryWithVariables.feature&quot;) {_url:&#39;http://localhost:9897&#39;,_path:&#39;/normal/webapi/add&#39;,_id:&#39;#(createJobId)&#39;}
+&gt;&gt; classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:7
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:254)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1201)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime$1.process(FeatureRuntime.java:140)
+
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:5
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:10
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:11
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:12
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#Send the GET request with query param</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref failed">14</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>path &#39;/normal/webapi/find&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">01:32:49.902 classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:14
+Given path &#39;/normal/webapi/find&#39;
+&gt;&gt; classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:7
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:254)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1201)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime$1.process(FeatureRuntime.java:140)
+
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:5
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:10
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:11
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:12
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:14
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#And param id = createJobId</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#And param jobTitle = &#39;Software Engg - 2&#39;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref failed">17</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>params {id: &#39;#(createJobId)&#39;, jobTitle: &#39;Software Engg - 2&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.17">01:32:49.907 classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:17
+And params {id: &#39;#(createJobId)&#39;, jobTitle: &#39;Software Engg - 2&#39;}
+&gt;&gt; classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:7
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:254)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1201)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime$1.process(FeatureRuntime.java:140)
+
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:5
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:10
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:11
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:12
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:14
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:17
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref failed">18</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>headers {Accept : &#39;application/json&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18">01:32:49.910 classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:18
+And headers {Accept : &#39;application/json&#39;}
+&gt;&gt; classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:7
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:254)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1201)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime$1.process(FeatureRuntime.java:140)
+
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:5
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:10
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:11
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:12
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:14
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:17
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:18
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref failed">19</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19">01:32:49.913 classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:19
+When method get
+&gt;&gt; classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:7
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:254)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1201)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime$1.process(FeatureRuntime.java:140)
+
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:5
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:10
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:11
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:12
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:14
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:17
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:18
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:19
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref failed">20</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.20">01:32:49.914 classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:20
+Then status 200
+&gt;&gt; classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:7
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:254)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1201)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime$1.process(FeatureRuntime.java:140)
+
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:5
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:10
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:11
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:12
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:14
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:17
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:18
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:19
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:20
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref failed">21</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response.jobId == createJobId</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.21">01:32:49.924 classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:21
+And match response.jobId == createJobId
+&gt;&gt; classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:7
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:254)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1201)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime$1.process(FeatureRuntime.java:140)
+
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:5
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:10
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:11
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:12
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:14
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:17
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:18
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:19
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:20
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:21
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:24]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:24]</span>
+                <span class="scenario-name">To get the data using Query Parameters with JobId not in the application</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:24]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:9897&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">01:32:49.867 classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:5
+Given url &#39;http://localhost:9897&#39;
+&gt;&gt; classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:24
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:254)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1201)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime$1.process(FeatureRuntime.java:140)
+
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:5
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#Create the Job entry</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#Get the newly created Job Entry using Query param</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref failed">27</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def getRandomValue = function() {return Math.floor((100)*Math.random());}</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.27">01:32:49.868 classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:27
+* def getRandomValue = function() {return Math.floor((100)*Math.random());}
+&gt;&gt; classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:24
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:254)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1201)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime$1.process(FeatureRuntime.java:140)
+
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:5
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:27
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref failed">28</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def createJobId = getRandomValue()</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.28">01:32:49.868 classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:28
+* def createJobId = getRandomValue()
+&gt;&gt; classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:24
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:254)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1201)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime$1.process(FeatureRuntime.java:140)
+
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:5
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:27
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:28
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref failed">29</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def createJob = call read(&quot;../../createJobEntryWithVariables.feature&quot;) {_url:&#39;http://localhost:9897&#39;,_path:&#39;/normal/webapi/add&#39;,_id:&#39;#(createJobId)&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.29">01:32:49.869 classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:29
+* def createJob = call read(&quot;../../createJobEntryWithVariables.feature&quot;) {_url:&#39;http://localhost:9897&#39;,_path:&#39;/normal/webapi/add&#39;,_id:&#39;#(createJobId)&#39;}
+&gt;&gt; classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:24
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:254)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1201)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime$1.process(FeatureRuntime.java:140)
+
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:5
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:27
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:28
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:29
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#Send the GET request with query param</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref failed">31</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>path &#39;/normal/webapi/find&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.31">01:32:49.870 classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:31
+Given path &#39;/normal/webapi/find&#39;
+&gt;&gt; classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:24
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:254)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1201)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime$1.process(FeatureRuntime.java:140)
+
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:5
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:27
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:28
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:29
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:31
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref failed">32</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>param id = 1212312441</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.32">01:32:49.871 classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:32
+And param id = 1212312441
+&gt;&gt; classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:24
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:254)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1201)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime$1.process(FeatureRuntime.java:140)
+
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:5
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:27
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:28
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:29
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:31
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:32
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref failed">33</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>param jobTitle = &#39;Software Engg - 2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.33">01:32:49.871 classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:33
+And param jobTitle = &#39;Software Engg - 2&#39;
+&gt;&gt; classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:24
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:254)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1201)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime$1.process(FeatureRuntime.java:140)
+
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:5
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:27
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:28
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:29
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:31
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:32
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:33
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#And params {id: &#39;#(createJobId)&#39;, jobTitle: &#39;Software Engg - 2&#39;}</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref failed">35</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>headers {Accept : &#39;application/json&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.35">01:32:49.873 classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:35
+And headers {Accept : &#39;application/json&#39;}
+&gt;&gt; classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:24
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:254)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1201)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime$1.process(FeatureRuntime.java:140)
+
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:5
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:27
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:28
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:29
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:31
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:32
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:33
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:35
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref failed">36</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.36">01:32:49.874 classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:36
+When method get
+&gt;&gt; classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:24
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:254)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1201)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime$1.process(FeatureRuntime.java:140)
+
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:5
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:27
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:28
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:29
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:31
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:32
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:33
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:35
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:36
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref failed">37</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.37">01:32:49.876 classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:37
+Then status 404
+&gt;&gt; classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:24
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     myVarName: &#39;someValue&#39;,
+10:     username: &#39;admin1&#39;,
+11:     password: &#39;welcome&#39;,
+12:     _url: &#39;http://localhost:9897&#39;
+13: }
+14:   if (env == &#39;dev&#39;) {
+15:     // customize
+16:     // e.g. config.foo = &#39;bar&#39;;
+17:     config.username = &#39;author&#39;;
+18:     config.password = &#39;authorpassword&#39;;
+19:   } else if (env == &#39;e2e&#39;) {
+20:     // customize
+21:     config.username = &#39;user&#39;;
+22:     config.password = &#39;userpassword&#39;;
+23:   } else if (env == &#39;staging&#39;) {
+24:     // initialize the config for the staging
+25:     config.username = &#39;stagingauthor&#39;;
+26:     config.password = &#39;stagingauthorpassword&#39;;
+27:     config._url: &#39;http://staginglocalhost:9897&#39;;
+28:   } else if (env == &#39;preprod&#39;) {
+29:     // initialize the config for preprod
+30:     config.username = &#39;preprodauthor&#39;;
+31:     config.password = &#39;preprodauthorpassword&#39;;
+32:     config._url: &#39;http://preprodlocalhost:9897&#39;;
+33:   } else if (env == &#39;prod&#39;) {
+34:    // initialize the config for prod
+35:     config.username = &#39;prodauthor&#39;;
+36:     config.password = &#39;prodauthorpassword&#39;;
+37:     config._url: &#39;http://localhost:9897&#39;;
+38:     }
+39:   return config;
+40: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:27:15 Expected ; but found :
+    config._url: &#39;http://staginglocalhost:9897&#39;;
+               ^
+Unnamed:28:4 Expected ) but found else
+  } else if (env == &#39;preprod&#39;) {
+    ^
+Unnamed:32:15 Expected ; but found :
+    config._url: &#39;http://preprodlocalhost:9897&#39;;
+               ^
+Unnamed:33:2 Expected eof but found }
+  } else if (env == &#39;prod&#39;) {
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:254)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1201)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime$1.process(FeatureRuntime.java:140)
+
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:5
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:27
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:28
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:29
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:31
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:32
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:33
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:35
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:36
+classpath:com/api/automation/getrequest/queryparameters/queryParameters.feature:37
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

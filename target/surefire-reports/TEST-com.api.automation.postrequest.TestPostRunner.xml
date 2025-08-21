@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.api.automation.postrequest.TestPostRunner" time="1.284" tests="9" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\VN\Documents\Academia\Karate\Project\karateframework\target\test-classes;C:\Users\VN\Documents\Academia\Karate\Project\karateframework\target\classes;C:\Users\VN\.m2\repository\com\intuit\karate\karate-junit5\1.4.0\karate-junit5-1.4.0.jar;C:\Users\VN\.m2\repository\com\intuit\karate\karate-core\1.4.0\karate-core-1.4.0.jar;C:\Users\VN\.m2\repository\org\graalvm\js\js-scriptengine\22.3.0\js-scriptengine-22.3.0.jar;C:\Users\VN\.m2\repository\org\graalvm\sdk\graal-sdk\22.3.0\graal-sdk-22.3.0.jar;C:\Users\VN\.m2\repository\org\graalvm\js\js\22.3.0\js-22.3.0.jar;C:\Users\VN\.m2\repository\org\graalvm\regex\regex\22.3.0\regex-22.3.0.jar;C:\Users\VN\.m2\repository\org\graalvm\truffle\truffle-api\22.3.0\truffle-api-22.3.0.jar;C:\Users\VN\.m2\repository\com\ibm\icu\icu4j\71.1\icu4j-71.1.jar;C:\Users\VN\.m2\repository\org\thymeleaf\thymeleaf\3.0.14.RELEASE\thymeleaf-3.0.14.RELEASE.jar;C:\Users\VN\.m2\repository\ognl\ognl\3.1.26\ognl-3.1.26.jar;C:\Users\VN\.m2\repository\org\javassist\javassist\3.20.0-GA\javassist-3.20.0-GA.jar;C:\Users\VN\.m2\repository\org\attoparser\attoparser\2.0.5.RELEASE\attoparser-2.0.5.RELEASE.jar;C:\Users\VN\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\VN\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\VN\.m2\repository\com\linecorp\armeria\armeria\1.22.0\armeria-1.22.0.jar;C:\Users\VN\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.14.2\jackson-core-2.14.2.jar;C:\Users\VN\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.14.2\jackson-annotations-2.14.2.jar;C:\Users\VN\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.14.2\jackson-databind-2.14.2.jar;C:\Users\VN\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.14.2\jackson-datatype-jdk8-2.14.2.jar;C:\Users\VN\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.14.2\jackson-datatype-jsr310-2.14.2.jar;C:\Users\VN\.m2\repository\io\micrometer\micrometer-core\1.10.3\micrometer-core-1.10.3.jar;C:\Users\VN\.m2\repository\io\micrometer\micrometer-commons\1.10.3\micrometer-commons-1.10.3.jar;C:\Users\VN\.m2\repository\io\micrometer\micrometer-observation\1.10.3\micrometer-observation-1.10.3.jar;C:\Users\VN\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\VN\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\VN\.m2\repository\io\netty\netty-transport\4.1.87.Final\netty-transport-4.1.87.Final.jar;C:\Users\VN\.m2\repository\io\netty\netty-common\4.1.87.Final\netty-common-4.1.87.Final.jar;C:\Users\VN\.m2\repository\io\netty\netty-buffer\4.1.87.Final\netty-buffer-4.1.87.Final.jar;C:\Users\VN\.m2\repository\io\netty\netty-resolver\4.1.87.Final\netty-resolver-4.1.87.Final.jar;C:\Users\VN\.m2\repository\io\netty\netty-codec-haproxy\4.1.87.Final\netty-codec-haproxy-4.1.87.Final.jar;C:\Users\VN\.m2\repository\io\netty\netty-codec\4.1.87.Final\netty-codec-4.1.87.Final.jar;C:\Users\VN\.m2\repository\io\netty\netty-codec-http2\4.1.87.Final\netty-codec-http2-4.1.87.Final.jar;C:\Users\VN\.m2\repository\io\netty\netty-handler\4.1.87.Final\netty-handler-4.1.87.Final.jar;C:\Users\VN\.m2\repository\io\netty\netty-codec-http\4.1.87.Final\netty-codec-http-4.1.87.Final.jar;C:\Users\VN\.m2\repository\io\netty\netty-resolver-dns\4.1.87.Final\netty-resolver-dns-4.1.87.Final.jar;C:\Users\VN\.m2\repository\io\netty\netty-codec-dns\4.1.87.Final\netty-codec-dns-4.1.87.Final.jar;C:\Users\VN\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\VN\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\VN\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.87.Final\netty-transport-native-unix-common-4.1.87.Final-linux-x86_64.jar;C:\Users\VN\.m2\repository\io\netty\netty-transport-native-epoll\4.1.87.Final\netty-transport-native-epoll-4.1.87.Final-linux-x86_64.jar;C:\Users\VN\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.87.Final\netty-transport-native-unix-common-4.1.87.Final.jar;C:\Users\VN\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.87.Final\netty-transport-classes-epoll-4.1.87.Final.jar;C:\Users\VN\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.87.Final\netty-resolver-dns-native-macos-4.1.87.Final-osx-x86_64.jar;C:\Users\VN\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.87.Final\netty-resolver-dns-classes-macos-4.1.87.Final.jar;C:\Users\VN\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.87.Final\netty-resolver-dns-native-macos-4.1.87.Final-osx-aarch_64.jar;C:\Users\VN\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.56.Final\netty-tcnative-boringssl-static-2.0.56.Final-linux-x86_64.jar;C:\Users\VN\.m2\repository\io\netty\netty-tcnative-classes\2.0.56.Final\netty-tcnative-classes-2.0.56.Final.jar;C:\Users\VN\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.56.Final\netty-tcnative-boringssl-static-2.0.56.Final-linux-aarch_64.jar;C:\Users\VN\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.56.Final\netty-tcnative-boringssl-static-2.0.56.Final-osx-x86_64.jar;C:\Users\VN\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.56.Final\netty-tcnative-boringssl-static-2.0.56.Final-osx-aarch_64.jar;C:\Users\VN\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.56.Final\netty-tcnative-boringssl-static-2.0.56.Final-windows-x86_64.jar;C:\Users\VN\.m2\repository\io\netty\netty-handler-proxy\4.1.87.Final\netty-handler-proxy-4.1.87.Final.jar;C:\Users\VN\.m2\repository\io\netty\netty-codec-socks\4.1.87.Final\netty-codec-socks-4.1.87.Final.jar;C:\Users\VN\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.9.0\brotli4j-1.9.0.jar;C:\Users\VN\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\VN\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\VN\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\VN\.m2\repository\ch\qos\logback\logback-classic\1.2.9\logback-classic-1.2.9.jar;C:\Users\VN\.m2\repository\ch\qos\logback\logback-core\1.2.9\logback-core-1.2.9.jar;C:\Users\VN\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.32\jcl-over-slf4j-1.7.32.jar;C:\Users\VN\.m2\repository\org\antlr\antlr4-runtime\4.11.1\antlr4-runtime-4.11.1.jar;C:\Users\VN\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;C:\Users\VN\.m2\repository\net\minidev\json-smart\2.4.10\json-smart-2.4.10.jar;C:\Users\VN\.m2\repository\net\minidev\accessors-smart\2.4.9\accessors-smart-2.4.9.jar;C:\Users\VN\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\VN\.m2\repository\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar;C:\Users\VN\.m2\repository\de\siegmar\fastcsv\2.2.1\fastcsv-2.2.1.jar;C:\Users\VN\.m2\repository\info\picocli\picocli\4.7.1\picocli-4.7.1.jar;C:\Users\VN\.m2\repository\io\github\classgraph\classgraph\4.8.152\classgraph-4.8.152.jar;C:\Users\VN\.m2\repository\io\github\t12y\resemble\1.0.2\resemble-1.0.2.jar;C:\Users\VN\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\VN\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.1\junit-jupiter-api-5.9.1.jar;C:\Users\VN\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\VN\.m2\repository\org\junit\platform\junit-platform-commons\1.9.1\junit-platform-commons-1.9.1.jar;C:\Users\VN\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\VN\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.1\junit-jupiter-engine-5.9.1.jar;C:\Users\VN\.m2\repository\org\junit\platform\junit-platform-engine\1.9.1\junit-platform-engine-1.9.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Mexico_City"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\VN\AppData\Local\Temp\surefire1000568154513261432\surefirebooter-20250820110238221_3.jar C:\Users\VN\AppData\Local\Temp\surefire1000568154513261432 2025-08-20T11-02-37_677-jvmRun1 surefire-20250820110238221_1tmp surefire_0-20250820110238221_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\VN\Documents\Academia\Karate\Project\karateframework\target\test-classes;C:\Users\VN\Documents\Academia\Karate\Project\karateframework\target\classes;C:\Users\VN\.m2\repository\com\intuit\karate\karate-junit5\1.4.0\karate-junit5-1.4.0.jar;C:\Users\VN\.m2\repository\com\intuit\karate\karate-core\1.4.0\karate-core-1.4.0.jar;C:\Users\VN\.m2\repository\org\graalvm\js\js-scriptengine\22.3.0\js-scriptengine-22.3.0.jar;C:\Users\VN\.m2\repository\org\graalvm\sdk\graal-sdk\22.3.0\graal-sdk-22.3.0.jar;C:\Users\VN\.m2\repository\org\graalvm\js\js\22.3.0\js-22.3.0.jar;C:\Users\VN\.m2\repository\org\graalvm\regex\regex\22.3.0\regex-22.3.0.jar;C:\Users\VN\.m2\repository\org\graalvm\truffle\truffle-api\22.3.0\truffle-api-22.3.0.jar;C:\Users\VN\.m2\repository\com\ibm\icu\icu4j\71.1\icu4j-71.1.jar;C:\Users\VN\.m2\repository\org\thymeleaf\thymeleaf\3.0.14.RELEASE\thymeleaf-3.0.14.RELEASE.jar;C:\Users\VN\.m2\repository\ognl\ognl\3.1.26\ognl-3.1.26.jar;C:\Users\VN\.m2\repository\org\javassist\javassist\3.20.0-GA\javassist-3.20.0-GA.jar;C:\Users\VN\.m2\repository\org\attoparser\attoparser\2.0.5.RELEASE\attoparser-2.0.5.RELEASE.jar;C:\Users\VN\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\VN\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\VN\.m2\repository\com\linecorp\armeria\armeria\1.22.0\armeria-1.22.0.jar;C:\Users\VN\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.14.2\jackson-core-2.14.2.jar;C:\Users\VN\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.14.2\jackson-annotations-2.14.2.jar;C:\Users\VN\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.14.2\jackson-databind-2.14.2.jar;C:\Users\VN\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.14.2\jackson-datatype-jdk8-2.14.2.jar;C:\Users\VN\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.14.2\jackson-datatype-jsr310-2.14.2.jar;C:\Users\VN\.m2\repository\io\micrometer\micrometer-core\1.10.3\micrometer-core-1.10.3.jar;C:\Users\VN\.m2\repository\io\micrometer\micrometer-commons\1.10.3\micrometer-commons-1.10.3.jar;C:\Users\VN\.m2\repository\io\micrometer\micrometer-observation\1.10.3\micrometer-observation-1.10.3.jar;C:\Users\VN\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\VN\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\VN\.m2\repository\io\netty\netty-transport\4.1.87.Final\netty-transport-4.1.87.Final.jar;C:\Users\VN\.m2\repository\io\netty\netty-common\4.1.87.Final\netty-common-4.1.87.Final.jar;C:\Users\VN\.m2\repository\io\netty\netty-buffer\4.1.87.Final\netty-buffer-4.1.87.Final.jar;C:\Users\VN\.m2\repository\io\netty\netty-resolver\4.1.87.Final\netty-resolver-4.1.87.Final.jar;C:\Users\VN\.m2\repository\io\netty\netty-codec-haproxy\4.1.87.Final\netty-codec-haproxy-4.1.87.Final.jar;C:\Users\VN\.m2\repository\io\netty\netty-codec\4.1.87.Final\netty-codec-4.1.87.Final.jar;C:\Users\VN\.m2\repository\io\netty\netty-codec-http2\4.1.87.Final\netty-codec-http2-4.1.87.Final.jar;C:\Users\VN\.m2\repository\io\netty\netty-handler\4.1.87.Final\netty-handler-4.1.87.Final.jar;C:\Users\VN\.m2\repository\io\netty\netty-codec-http\4.1.87.Final\netty-codec-http-4.1.87.Final.jar;C:\Users\VN\.m2\repository\io\netty\netty-resolver-dns\4.1.87.Final\netty-resolver-dns-4.1.87.Final.jar;C:\Users\VN\.m2\repository\io\netty\netty-codec-dns\4.1.87.Final\netty-codec-dns-4.1.87.Final.jar;C:\Users\VN\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\VN\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\VN\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.87.Final\netty-transport-native-unix-common-4.1.87.Final-linux-x86_64.jar;C:\Users\VN\.m2\repository\io\netty\netty-transport-native-epoll\4.1.87.Final\netty-transport-native-epoll-4.1.87.Final-linux-x86_64.jar;C:\Users\VN\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.87.Final\netty-transport-native-unix-common-4.1.87.Final.jar;C:\Users\VN\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.87.Final\netty-transport-classes-epoll-4.1.87.Final.jar;C:\Users\VN\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.87.Final\netty-resolver-dns-native-macos-4.1.87.Final-osx-x86_64.jar;C:\Users\VN\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.87.Final\netty-resolver-dns-classes-macos-4.1.87.Final.jar;C:\Users\VN\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.87.Final\netty-resolver-dns-native-macos-4.1.87.Final-osx-aarch_64.jar;C:\Users\VN\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.56.Final\netty-tcnative-boringssl-static-2.0.56.Final-linux-x86_64.jar;C:\Users\VN\.m2\repository\io\netty\netty-tcnative-classes\2.0.56.Final\netty-tcnative-classes-2.0.56.Final.jar;C:\Users\VN\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.56.Final\netty-tcnative-boringssl-static-2.0.56.Final-linux-aarch_64.jar;C:\Users\VN\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.56.Final\netty-tcnative-boringssl-static-2.0.56.Final-osx-x86_64.jar;C:\Users\VN\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.56.Final\netty-tcnative-boringssl-static-2.0.56.Final-osx-aarch_64.jar;C:\Users\VN\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.56.Final\netty-tcnative-boringssl-static-2.0.56.Final-windows-x86_64.jar;C:\Users\VN\.m2\repository\io\netty\netty-handler-proxy\4.1.87.Final\netty-handler-proxy-4.1.87.Final.jar;C:\Users\VN\.m2\repository\io\netty\netty-codec-socks\4.1.87.Final\netty-codec-socks-4.1.87.Final.jar;C:\Users\VN\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.9.0\brotli4j-1.9.0.jar;C:\Users\VN\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\VN\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\VN\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\VN\.m2\repository\ch\qos\logback\logback-classic\1.2.9\logback-classic-1.2.9.jar;C:\Users\VN\.m2\repository\ch\qos\logback\logback-core\1.2.9\logback-core-1.2.9.jar;C:\Users\VN\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.32\jcl-over-slf4j-1.7.32.jar;C:\Users\VN\.m2\repository\org\antlr\antlr4-runtime\4.11.1\antlr4-runtime-4.11.1.jar;C:\Users\VN\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;C:\Users\VN\.m2\repository\net\minidev\json-smart\2.4.10\json-smart-2.4.10.jar;C:\Users\VN\.m2\repository\net\minidev\accessors-smart\2.4.9\accessors-smart-2.4.9.jar;C:\Users\VN\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\VN\.m2\repository\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar;C:\Users\VN\.m2\repository\de\siegmar\fastcsv\2.2.1\fastcsv-2.2.1.jar;C:\Users\VN\.m2\repository\info\picocli\picocli\4.7.1\picocli-4.7.1.jar;C:\Users\VN\.m2\repository\io\github\classgraph\classgraph\4.8.152\classgraph-4.8.152.jar;C:\Users\VN\.m2\repository\io\github\t12y\resemble\1.0.2\resemble-1.0.2.jar;C:\Users\VN\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\VN\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.1\junit-jupiter-api-5.9.1.jar;C:\Users\VN\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\VN\.m2\repository\org\junit\platform\junit-platform-commons\1.9.1\junit-platform-commons-1.9.1.jar;C:\Users\VN\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\VN\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.1\junit-jupiter-engine-5.9.1.jar;C:\Users\VN\.m2\repository\org\junit\platform\junit-platform-engine\1.9.1\junit-platform-engine-1.9.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\VN"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\VN\Documents\Academia\Karate\Project\karateframework"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\VN\AppData\Local\Temp\surefire1000568154513261432\surefirebooter-20250820110238221_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.14+8-LTS-191"/>
+    <property name="user.name" value="VN"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\VN\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\VN\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.14"/>
+    <property name="user.dir" value="C:\Users\VN\Documents\Academia\Karate\Project\karateframework"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python313\Scripts\;C:\Python313\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\VN\AppData\Roaming\npm;C:\Program Files\Mozilla Firefox;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\VN\AppData\Local\Microsoft\WindowsApps;C:\Users\VN\AppData\Local\Programs\Microsoft VS Code\bin;C:\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin;C:\Program Files\Java\jdk-17\bin;C:\Users\VN\AppData\Roaming\npm;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.14+8-LTS-191"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="[1:7] To create the job Entry in JSON format" classname="com/api/automation/postrequest/createJobEntry" time="0.033">
+    <system-out><![CDATA[11:03:01.791 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:03:01.806 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:03:01.811 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 229
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":1,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Pega"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}
+
+11:03:01.827 [main] DEBUG com.intuit.karate - response time in milliseconds: 7
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 20 Aug 2025 17:03:01 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":1,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Pega"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}
+
+11:03:01.827 [main] INFO  com.intuit.karate - [print] {
+  "jobId": 1,
+  "jobTitle": "Software Engg - 2",
+  "jobDescription": "To develop andriod application",
+  "experience": [
+    "Google",
+    "Apple",
+    "Mobile Iron",
+    "Pega"
+  ],
+  "project": [
+    {
+      "projectName": "Movie App",
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle"
+      ]
+    }
+  ]
+}
+ 
+]]></system-out>
+  </testcase>
+  <testcase name="[2:17] To create the job Entry in XML format" classname="com/api/automation/postrequest/createJobEntry" time="0.154">
+    <system-out><![CDATA[11:03:01.842 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:03:01.851 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/xml; charset=UTF-8
+1 > Content-Length: 442
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 > Accept-Encoding: gzip,deflate
+<item><jobId>8</jobId><jobTitle>Software Engg</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology></technology></project></project></item>
+
+11:03:01.985 [main] DEBUG com.intuit.karate - response time in milliseconds: 134
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 20 Aug 2025 17:03:01 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":8,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}
+
+11:03:01.987 [main] INFO  com.intuit.karate - [print] {
+  "jobId": 8,
+  "jobTitle": "Software Engg",
+  "jobDescription": "To develop andriod application",
+  "experience": [
+    "Google",
+    "Apple",
+    "Mobile Iron"
+  ],
+  "project": [
+    {
+      "projectName": "Movie App",
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle"
+      ]
+    }
+  ]
+}
+ 
+]]></system-out>
+  </testcase>
+  <testcase name="[3:26] To create the job Entry in XML format" classname="com/api/automation/postrequest/createJobEntry" time="0.06">
+    <system-out><![CDATA[11:03:01.999 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:03:02.013 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/xml
+1 > Content-Type: application/xml; charset=UTF-8
+1 > Content-Length: 446
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 > Accept-Encoding: gzip,deflate
+<item><jobId>5</jobId><jobTitle>Software Engg - 3</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology></technology></project></project></item>
+
+11:03:02.038 [main] DEBUG com.intuit.karate - response time in milliseconds: 25
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/xml
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 20 Aug 2025 17:03:01 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+<Job><jobId>5</jobId><jobTitle>Software Engg - 3</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology></technology></project></project></Job>
+
+11:03:02.044 [main] INFO  com.intuit.karate - [print] <Job>
+  <jobId>5</jobId>
+  <jobTitle>Software Engg - 3</jobTitle>
+  <jobDescription>To develop andriod application</jobDescription>
+  <experience>
+    <experience>Google</experience>
+    <experience>Apple</experience>
+    <experience>Mobile Iron</experience>
+  </experience>
+  <project>
+    <project>
+      <projectName>Movie App</projectName>
+      <technology>
+        <technology>Kotlin</technology>
+        <technology>SQL Lite</technology>
+        <technology>Gradle</technology>
+      </technology>
+    </project>
+  </project>
+</Job>
+ 
+]]></system-out>
+  </testcase>
+  <testcase name="[4:35] To create the job Entry in JSON format with a file" classname="com/api/automation/postrequest/createJobEntry" time="0.034">
+    <system-out><![CDATA[11:03:02.065 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:03:02.071 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 229
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":4,"jobTitle":"Software Engg - 4","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Pega"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}
+
+11:03:02.089 [main] DEBUG com.intuit.karate - response time in milliseconds: 17
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 20 Aug 2025 17:03:01 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":4,"jobTitle":"Software Engg - 4","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Pega"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}
+
+11:03:02.090 [main] INFO  com.intuit.karate - [print] {
+  "jobId": 4,
+  "jobTitle": "Software Engg - 4",
+  "jobDescription": "To develop andriod application",
+  "experience": [
+    "Google",
+    "Apple",
+    "Mobile Iron",
+    "Pega"
+  ],
+  "project": [
+    {
+      "projectName": "Movie App",
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle"
+      ]
+    }
+  ]
+}
+ 
+]]></system-out>
+  </testcase>
+  <testcase name="[5:45] To create the job Entry in XML format with a file" classname="com/api/automation/postrequest/createJobEntry" time="0.053">
+    <system-out><![CDATA[11:03:02.102 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:03:02.115 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/xml
+1 > Content-Type: application/xml; charset=UTF-8
+1 > Content-Length: 446
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 > Accept-Encoding: gzip,deflate
+<item><jobId>6</jobId><jobTitle>Software Engg - 6</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology></technology></project></project></item>
+
+11:03:02.133 [main] DEBUG com.intuit.karate - response time in milliseconds: 18
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/xml
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 20 Aug 2025 17:03:01 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+<Job><jobId>6</jobId><jobTitle>Software Engg - 6</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology></technology></project></project></Job>
+
+11:03:02.141 [main] INFO  com.intuit.karate - [print] <Job>
+  <jobId>6</jobId>
+  <jobTitle>Software Engg - 6</jobTitle>
+  <jobDescription>To develop andriod application</jobDescription>
+  <experience>
+    <experience>Google</experience>
+    <experience>Apple</experience>
+    <experience>Mobile Iron</experience>
+  </experience>
+  <project>
+    <project>
+      <projectName>Movie App</projectName>
+      <technology>
+        <technology>Kotlin</technology>
+        <technology>SQL Lite</technology>
+        <technology>Gradle</technology>
+      </technology>
+    </project>
+  </project>
+</Job>
+ 
+]]></system-out>
+  </testcase>
+  <testcase name="[6:57] To create the job Entry in JSON format with embedded expression" classname="com/api/automation/postrequest/createJobEntry" time="0.033">
+    <system-out><![CDATA[11:03:02.157 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:03:02.159 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 230
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":21,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Pega"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}
+
+11:03:02.180 [main] DEBUG com.intuit.karate - response time in milliseconds: 20
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 20 Aug 2025 17:03:02 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":21,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Pega"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}
+
+11:03:02.182 [main] INFO  com.intuit.karate - [print] {
+  "jobId": 21,
+  "jobTitle": "Software Engg - 2",
+  "jobDescription": "To develop andriod application",
+  "experience": [
+    "Google",
+    "Apple",
+    "Mobile Iron",
+    "Pega"
+  ],
+  "project": [
+    {
+      "projectName": "Movie App",
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle"
+      ]
+    }
+  ]
+}
+ 
+]]></system-out>
+  </testcase>
+  <testcase name="[7:68] To create the job Entry in XML format with embedded expression" classname="com/api/automation/postrequest/createJobEntry" time="0.324">
+    <system-out><![CDATA[11:03:02.192 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:03:02.203 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/xml; charset=UTF-8
+1 > Content-Length: 443
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 > Accept-Encoding: gzip,deflate
+<item><jobId>97</jobId><jobTitle>Software Engg</jobTitle><jobDescription>To develop andriod application</jobDescription><experience><experience>Google</experience><experience>Apple</experience><experience>Mobile Iron</experience></experience><project><project><projectName>Movie App</projectName><technology><technology>Kotlin</technology><technology>SQL Lite</technology><technology>Gradle</technology></technology></project></project></item>
+
+11:03:02.221 [main] DEBUG com.intuit.karate - response time in milliseconds: 18
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 20 Aug 2025 17:03:02 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":97,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}
+
+11:03:02.224 [main] INFO  com.intuit.karate - [print] {
+  "jobId": 97,
+  "jobTitle": "Software Engg",
+  "jobDescription": "To develop andriod application",
+  "experience": [
+    "Google",
+    "Apple",
+    "Mobile Iron"
+  ],
+  "project": [
+    {
+      "projectName": "Movie App",
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle"
+      ]
+    }
+  ]
+}
+ 
+---------------------------------------------------------
+feature: classpath:com/api/automation/postrequest/createJobEntry.feature
+scenarios:  7 | passed:  7 | failed:  0 | time: 0.3479
+---------------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="[1:7] To create the job Entry in JSON format" classname="com/api/automation/postrequest/schemaValidation" time="0.044">
+    <system-out><![CDATA[11:03:02.525 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:03:02.529 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:9897/normal/webapi/add
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 229
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 > Accept-Encoding: gzip,deflate
+{"jobId":1,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Pega"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}
+
+11:03:02.552 [main] DEBUG com.intuit.karate - response time in milliseconds: 22
+1 < 201
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 20 Aug 2025 17:03:02 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"jobId":1,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Pega"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}
+
+11:03:02.554 [main] INFO  com.intuit.karate - [print] {
+  "jobId": 1,
+  "jobTitle": "Software Engg - 2",
+  "jobDescription": "To develop andriod application",
+  "experience": [
+    "Google",
+    "Apple",
+    "Mobile Iron",
+    "Pega"
+  ],
+  "project": [
+    {
+      "projectName": "Movie App",
+      "technology": [
+        "Kotlin",
+        "SQL Lite",
+        "Gradle"
+      ]
+    }
+  ]
+}
+ 
+]]></system-out>
+  </testcase>
+  <testcase name="[2:26] Schema Validation for GET end point" classname="com/api/automation/postrequest/schemaValidation" time="0.492">
+    <system-out><![CDATA[11:03:02.572 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:03:02.576 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:9897/normal/webapi/all
+1 > Accept: application/json
+1 > Host: localhost:9897
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.14)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:03:02.599 [main] DEBUG com.intuit.karate - response time in milliseconds: 22
+1 < 200
+1 < X-Content-Type-Options: nosniff
+1 < X-XSS-Protection: 1; mode=block
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Pragma: no-cache
+1 < Expires: 0
+1 < X-Frame-Options: DENY
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Wed, 20 Aug 2025 17:03:02 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+[{"jobId":1,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]},{"jobId":8,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Pega"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]},{"jobId":20,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Pega"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]},{"jobId":26,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Pega"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]},{"jobId":21,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Pega"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]},{"jobId":82,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Pega"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]},{"jobId":18,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Pega"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]},{"jobId":9980,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Pega"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]},{"jobId":9980,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Pega"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]},{"jobId":1,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Pega"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]},{"jobId":8,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]},{"jobId":5,"jobTitle":"Software Engg - 3","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]},{"jobId":4,"jobTitle":"Software Engg - 4","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Pega"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]},{"jobId":6,"jobTitle":"Software Engg - 6","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]},{"jobId":21,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Pega"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]},{"jobId":97,"jobTitle":"Software Engg","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]},{"jobId":1,"jobTitle":"Software Engg - 2","jobDescription":"To develop andriod application","experience":["Google","Apple","Mobile Iron","Pega"],"project":[{"projectName":"Movie App","technology":["Kotlin","SQL Lite","Gradle"]}]}]
+
+---------------------------------------------------------
+feature: classpath:com/api/automation/postrequest/schemaValidation.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 0.1996
+---------------------------------------------------------
+
+Karate version: 1.4.0
+======================================================
+elapsed:   1.10 | threads:    1 | thread time: 0.55 
+features:     2 | skipped:    0 | efficiency: 0.50
+scenarios:    9 | passed:     9 | failed: 0
+======================================================
+
+HTML report: (paste into browser to view) | Karate version: 1.4.0
+file:///C:/Users/VN/Documents/Academia/Karate/Project/karateframework/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  </testcase>
+</testsuite>

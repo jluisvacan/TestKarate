@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"com\/api\/automation\/getrequest\/getRequest[1:8]","start":1755628749653,"end":1755628751410,"title":"com\/api\/automation\/getrequest\/getRequest[1:8] 12:39:09.653-12:39:11.410 To get  all the data from application in JSON format"},{"id":2,"group":2,"content":"com\/api\/automation\/getrequest\/getRequest[2:17]","start":1755628749653,"end":1755628751363,"title":"com\/api\/automation\/getrequest\/getRequest[2:17] 12:39:09.653-12:39:11.363 To get  all the data from application in JSON format using path"},{"id":3,"group":3,"content":"com\/api\/automation\/getrequest\/getRequest[3:29]","start":1755628749654,"end":1755628751751,"title":"com\/api\/automation\/getrequest\/getRequest[3:29] 12:39:09.654-12:39:11.751 To get  all the data from application in XML format using path"},{"id":4,"group":4,"content":"com\/api\/automation\/getrequest\/getRequest2[1:4]","start":1755628749654,"end":1755628750284,"title":"com\/api\/automation\/getrequest\/getRequest2[1:4] 12:39:09.654-12:39:10.284 To test get end point with JSON data","className":"failed"},{"id":5,"group":5,"content":"com\/api\/automation\/getrequest\/getRequest2[2:11]","start":1755628749653,"end":1755628750284,"title":"com\/api\/automation\/getrequest\/getRequest2[2:11] 12:39:09.653-12:39:10.284 To test get end point with XML data","className":"failed"},{"id":6,"group":5,"content":"com\/api\/automation\/getrequest\/jsonPathExpression[1:6]","start":1755628750321,"end":1755628753401,"title":"com\/api\/automation\/getrequest\/jsonPathExpression[1:6] 12:39:10.321-12:39:13.401 To get the value of property using path expression"},{"id":7,"group":4,"content":"com\/api\/automation\/getrequest\/responseMatcher[1:7]","start":1755628750320,"end":1755628752222,"title":"com\/api\/automation\/getrequest\/responseMatcher[1:7] 12:39:10.320-12:39:12.222 Setup To get the data in JSON format","className":"failed"},{"id":8,"group":2,"content":"com\/api\/automation\/getrequest\/responseMatcher[2:39]","start":1755628751712,"end":1755628753845,"title":"com\/api\/automation\/getrequest\/responseMatcher[2:39] 12:39:11.712-12:39:13.845 Setup To get the data in XML format","className":"failed"},{"id":9,"group":1,"content":"com\/api\/automation\/getrequest\/responseMatcher[3:72]","start":1755628751427,"end":1755628752340,"title":"com\/api\/automation\/getrequest\/responseMatcher[3:72] 12:39:11.427-12:39:12.340 To get the data in JSON format and validate using negative condition"},{"id":10,"group":3,"content":"com\/api\/automation\/getrequest\/responseMatcher[4:97]","start":1755628751831,"end":1755628752191,"title":"com\/api\/automation\/getrequest\/responseMatcher[4:97] 12:39:11.831-12:39:12.191 To get the data in JSON format and validate a specific property"},{"id":11,"group":3,"content":"com\/api\/automation\/getrequest\/validateJSONArray[1:7]","start":1755628752205,"end":1755628752743,"title":"com\/api\/automation\/getrequest\/validateJSONArray[1:7] 12:39:12.205-12:39:12.743 The get data in JSON format and validate values"},{"id":12,"group":4,"content":"com\/api\/automation\/getrequest\/validateJSONArray[2:27]","start":1755628752235,"end":1755628752906,"title":"com\/api\/automation\/getrequest\/validateJSONArray[2:27] 12:39:12.235-12:39:12.906 The get data in JSON format and validate using fuzzy matcher"},{"id":13,"group":1,"content":"com\/api\/automation\/getrequest\/validateXMLResponse[1:7]","start":1755628752354,"end":1755628753520,"title":"com\/api\/automation\/getrequest\/validateXMLResponse[1:7] 12:39:12.354-12:39:13.520 The get data in XML format and validate values","className":"failed"},{"id":14,"group":3,"content":"com\/api\/automation\/getrequest\/validateXMLResponse[2:23]","start":1755628752757,"end":1755628753429,"title":"com\/api\/automation\/getrequest\/validateXMLResponse[2:23] 12:39:12.757-12:39:13.429 The get data in XML format and validate values","className":"failed"},{"id":15,"group":4,"content":"com\/api\/automation\/getrequest\/ValidationUsingFile[1:7]","start":1755628752931,"end":1755628753077,"title":"com\/api\/automation\/getrequest\/ValidationUsingFile[1:7] 12:39:12.931-12:39:13.077 To get the data in JSON format and validate from file"},{"id":16,"group":4,"content":"com\/api\/automation\/getrequest\/ValidationUsingFile[2:19]","start":1755628753089,"end":1755628753771,"title":"com\/api\/automation\/getrequest\/ValidationUsingFile[2:19] 12:39:13.089-12:39:13.771 Setup To get the data in XML format","className":"failed"},{"id":17,"group":5,"content":"com\/api\/automation\/getrequest\/Variables[1:11]","start":1755628753452,"end":1755628753648,"title":"com\/api\/automation\/getrequest\/Variables[1:11] 12:39:13.452-12:39:13.648 To create a Variable"},{"id":18,"group":3,"content":"com\/api\/automation\/getrequest\/Variables[2:29]","start":1755628753442,"end":1755628753536,"title":"com\/api\/automation\/getrequest\/Variables[2:29] 12:39:13.442-12:39:13.536 To create a Variable"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"com\/api\/automation\/tags\/createJobEntry[1:9]","start":1755649595215,"end":1755649597698,"title":"com\/api\/automation\/tags\/createJobEntry[1:9] 18:26:35.215-18:26:37.698 To create the job Entry in JSON format"},{"id":2,"group":2,"content":"com\/api\/automation\/tags\/createJobEntry[2:19]","start":1755649595213,"end":1755649597698,"title":"com\/api\/automation\/tags\/createJobEntry[2:19] 18:26:35.213-18:26:37.698 To create the job Entry in XML format"},{"id":3,"group":3,"content":"com\/api\/automation\/tags\/createJobEntry[3:28]","start":1755649595357,"end":1755649597775,"title":"com\/api\/automation\/tags\/createJobEntry[3:28] 18:26:35.357-18:26:37.775 To create the job Entry in XML format"},{"id":4,"group":4,"content":"com\/api\/automation\/tags\/createJobEntry[4:37]","start":1755649595786,"end":1755649596352,"title":"com\/api\/automation\/tags\/createJobEntry[4:37] 18:26:35.786-18:26:36.352 To create the job Entry in JSON format with a file","className":"failed"},{"id":5,"group":5,"content":"com\/api\/automation\/tags\/createJobEntry[5:47]","start":1755649595413,"end":1755649596354,"title":"com\/api\/automation\/tags\/createJobEntry[5:47] 18:26:35.413-18:26:36.354 To create the job Entry in XML format with a file","className":"failed"},{"id":6,"group":4,"content":"com\/api\/automation\/tags\/createJobEntry[6:59]","start":1755649596395,"end":1755649597698,"title":"com\/api\/automation\/tags\/createJobEntry[6:59] 18:26:36.395-18:26:37.698 To create the job Entry in JSON format with embedded expression"},{"id":7,"group":5,"content":"com\/api\/automation\/tags\/createJobEntry[7:70]","start":1755649596402,"end":1755649597703,"title":"com\/api\/automation\/tags\/createJobEntry[7:70] 18:26:36.402-18:26:37.703 To create the job Entry in XML format with embedded expression"},{"id":8,"group":1,"content":"com\/api\/automation\/tags\/queryParameters[1:8]","start":1755649597710,"end":1755649597730,"title":"com\/api\/automation\/tags\/queryParameters[1:8] 18:26:37.710-18:26:37.730 To get the data using Query Parameters","className":"failed"},{"id":9,"group":2,"content":"com\/api\/automation\/tags\/queryParameters[2:25]","start":1755649597710,"end":1755649597731,"title":"com\/api\/automation\/tags\/queryParameters[2:25] 18:26:37.710-18:26:37.731 To get the data using Query Parameters with JobId not in the application","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
